@@ -152,7 +152,7 @@
       color: hsl(228, 45%, 44%);
     }
 
-
+@media (min-width: 640px) {
     .container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -175,7 +175,7 @@
 
     .container p {
       margin-bottom: 1rem;
-    }
+  }}
   </style>
 </head>
 
@@ -183,6 +183,10 @@
   <div class="container">
     <article>
       <picture>
+        <source
+            media="(min-width: 640px)"
+            srcset="./images/image-product-desktop.jpg"
+          />
         <img src="./images/image-product-mobile.jpg" alt="" />
       </picture>
     </article>
